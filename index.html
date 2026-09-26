@@ -1,12 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emprendimiento</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MORBEJ | Consultora y Constructora</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+  <!-- Barra de navegación superpuesta -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-bold">MORBEJ</span>
+        <span class="logo-tagline">Consultora & Constructora</span>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn-nav">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero principal -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Ingeniería & Arquitectura</span>
+      <h2>Transformamos tus ideas en obras sólidas y sostenibles</h2>
+      <p>Especialistas en diseño arquitectónico, estructural, sanitario, supervisión técnica y ejecución de proyectos de alta precisión.</p>
+      <div class="hero-buttons">
+        <a href="#servicios" class="btn-primary">Ver Servicios</a>
+        <a href="https://wa.me/59178229308?text=Hola,%20quisiera%20solicitar%20cotización" class="btn-outline" target="_blank" rel="noopener noreferrer">Cotizar Proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarjetas Giratorias de Servicios -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Nuestra Experiencia</span>
+        <h2 class="section-title">Servicios Especializados</h2>
+        <p class="section-desc">Pasa el cursor o presiona "Ver detalle" para girar la tarjeta y conocer el alcance de cada área.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Tarjeta 1: Diseño Arquitectónico -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Frente -->
+            <div class="card-front">
+              <div class="icon-box">📐</div>
+              <h3>Diseño Arquitectónico</h3>
+              <p>Planificación espacial, estética y funcional adaptada a tus necesidades y a las normativas vigentes.</p>
+              <button class="btn-detail" type="button">Ver detalle ➔</button>
+            </div>
+            <!-- Reverso -->
+            <div class="card-back" style="background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');">
+              <div class="back-content">
+                <h3>Detalle Arquitectónico</h3>
+                <ul>
+                  <li>✓ Levantamiento y distribución espacial</li>
+                  <li>✓ Anteproyectos y planos 2D/3D</li>
+                  <li>✓ Modelado de renders fotorrealistas</li>
+                  <li>✓ Trámites y licencias municipales</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Diseño Estructural -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Frente -->
+            <div class="card-front">
+              <div class="icon-box">🏗️</div>
+              <h3>Diseño Estructural</h3>
+              <p>Cálculos de alta precisión para garantizar la estabilidad, seguridad y durabilidad de cada edificación.</p>
+              <button class="btn-detail" type="button">Ver detalle ➔</button>
+            </div>
+            <!-- Reverso -->
+            <div class="card-back" style="background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80');">
+              <div class="back-content">
+                <h3>Detalle Estructural</h3>
+                <ul>
+                  <li>✓ Análisis de cargas y sismorresistencia</li>
+                  <li>✓ Diseño de cimentaciones y zapatas</li>
+                  <li>✓ Cálculo de hormigón armado y acero</li>
+                  <li>✓ Memoria de cálculo completa</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Diseño Sanitario -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Frente -->
+            <div class="card-front">
+              <div class="icon-box">💧</div>
+              <h3>Diseño Sanitario</h3>
+              <p>Sistemas eficientes e integrales de agua potable, alcantarillado sanitario y drenaje pluvial.</p>
+              <button class="btn-detail" type="button">Ver detalle ➔</button>
+            </div>
+            <!-- Reverso -->
+            <div class="card-back" style="background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80');">
+              <div class="back-content">
+                <h3>Detalle Sanitario</h3>
+                <ul>
+                  <li>✓ Redes de agua potable e hidroneumáticos</li>
+                  <li>✓ Sistemas de alcantarillado y desagües</li>
+                  <li>✓ Captación y evacuación pluvial</li>
+                  <li>✓ Esqueletos y planos de instalaciones</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Supervisión de Obras -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Frente -->
+            <div class="card-front">
+              <div class="icon-box">📋</div>
+              <h3>Supervisión de Obras</h3>
+              <p>Control riguroso de calidad, tiempos, costos y seguridad técnica en el desarrollo del proyecto.</p>
+              <button class="btn-detail" type="button">Ver detalle ➔</button>
+            </div>
+            <!-- Reverso -->
+            <div class="card-back" style="background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80');">
+              <div class="back-content">
+                <h3>Detalle de Supervisión</h3>
+                <ul>
+                  <li>✓ Control de calidad de materiales</li>
+                  <li>✓ Verificación de cumplimiento de planos</li>
+                  <li>✓ Gestión de cronogramas y presupuesto</li>
+                  <li>✓ Informes técnicos periódicos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Ejecución de Obras -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Frente -->
+            <div class="card-front">
+              <div class="icon-box">🔨</div>
+              <h3>Ejecución de Obras</h3>
+              <p>Construcción con mano de obra calificada, materiales de alta gama y gestión profesional llave en mano.</p>
+              <button class="btn-detail" type="button">Ver detalle ➔</button>
+            </div>
+            <!-- Reverso -->
+            <div class="card-back" style="background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80');">
+              <div class="back-content">
+                <h3>Detalle de Ejecución</h3>
+                <ul>
+                  <li>✓ Movimiento de tierras y cimentación</li>
+                  <li>✓ Construcción de obra gruesa y fina</li>
+                  <li>✓ Instalación de acabados de primera</li>
+                  <li>✓ Entrega de proyectos llave en mano</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="nosotros" class="about">
+    <div class="container about-wrapper">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Sobre MORBEJ">
+      </div>
+      <div class="about-text">
+        <span class="sub-title">Compromiso y Calidad</span>
+        <h2>Ingeniería integral desde el diseño hasta la construcción</h2>
+        <p>En **MORBEJ** integramos el rigor técnico de la ingeniería con la creatividad del diseño arquitectónico. Nos encargamos de que cada plano se transforme en una estructura sólida, cumpliendo estrictamente los estándares de seguridad, tiempos y presupuestos proyectados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/59178229308?text=Hola,%20deseo%20consultar%20sobre%20sus%20servicios" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" class="whatsapp-icon">
+      <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.138-2.135c2.35 1.32 5.023 2.016 7.862 2.016 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.45 0-4.85-0.65-6.96-1.89l-0.5-0.3-5.17 1.35 1.38-5.04-0.33-0.52c-1.36-2.17-2.08-4.7-2.08-7.3 0-7.53 6.12-13.65 13.66-13.65s13.65 6.12 13.65 13.65c0 7.53-6.12 13.65-13.65 13.65zM22.5 19.3c-0.36-0.18-2.12-1.05-2.45-1.17s-0.57-0.18-0.81 0.18c-0.24 0.36-0.93 1.17-1.14 1.41s-0.42 0.27-0.78 0.09c-0.36-0.18-1.52-0.56-2.9-1.79-1.07-0.96-1.8-2.14-2.01-2.5-0.21-0.36-0.02-0.56 0.16-0.74 0.16-0.16 0.36-0.42 0.54-0.63s0.24-0.36 0.36-0.6c0.12-0.24 0.06-0.45-0.03-0.63s-0.81-1.95-1.11-2.67c-0.3-0.72-0.6-0.62-0.81-0.63h-0.69c-0.24 0-0.63 0.09-0.96 0.45s-1.26 1.23-1.26 3c0 1.77 1.29 3.48 1.47 3.72s2.54 3.88 6.16 5.44c0.86 0.37 1.53 0.59 2.06 0.76 0.86 0.27 1.65 0.23 2.27 0.14 0.69-0.1 2.12-0.87 2.42-1.71s0.3-1.56 0.21-1.71c-0.09-0.15-0.33-0.24-0.69-0.42z"/>
+    </svg>
+  </a>
+
+  <!-- Pie de página -->
+  <footer id="contacto" class="footer">
+    <div class="container footer-content">
+      <blockquote class="quote">
+        "Cada plano es el inicio de una visión, y cada obra, el cimiento donde se edifica el futuro."
+      </blockquote>
+      <div class="footer-contact">
+        <p>¿Tienes un proyecto en mente? <strong>Contáctanos:</strong> <a href="tel:+59178229308">+591 78229308</a></p>
+      </div>
+      <p class="copyright">
+        &copy; 2026 MORBEJ Consultora & Constructora. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
